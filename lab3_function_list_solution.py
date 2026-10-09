@@ -298,6 +298,47 @@ assert repeat_elements([2, 7, 8]) == [2, 2, 7, 7, 8, 8]
 assert squares([]) == []
 
 
+
+
 """
 Now finish the quiz_lab3 on e-learn. That's all for lab3.
 """
+
+
+
+"""
+More exercises as below:
+"""
+
+
+""" 
+Implement a function that uses an accumulator algorithm 
+to return a list whose elements are twice the values of
+the elements in the input list.
+"""
+def double_list(nums):
+    double_nums = []
+    for num in nums:
+        double_nums.append(num * 2)
+    return double_nums
+
+assert double_list([3, 6]) == [6, 12]
+assert double_list([1, 2, 1]) == [2, 4, 2]
+
+
+
+"""
+Implement a function that uses an accumulator algorithm
+to return a list whose elements are the sums of 
+the corresponding elements in two input lists.
+
+Assume the two lists have the same length.
+"""
+def sum_lists(nums1, nums2):
+    sum_of_nums = []
+    for i in range(len(nums1)):
+        sum_of_nums.append(nums1[i] + nums2[i])
+    return sum_of_nums
+
+assert sum_lists([2, 3], [5, 5]) == [7, 8]
+assert sum_lists([1, 4, 2], [-1, 0, 3]) == [0, 4, 5]
