@@ -175,12 +175,7 @@ def count_days_starting_with(c):
     pass
 
 
-assert count_days_starting_with('T') == 2
-assert count_days_starting_with('S') == 2
-assert count_days_starting_with('M') == 1
-assert count_days_starting_with('W') == 1
-assert count_days_starting_with('F') == 1
-assert count_days_starting_with('X') == 0
+# Write your unit tests below
 
 
 """
@@ -204,6 +199,10 @@ Hints:
    exactly two values, whether the record is a tuple or a list.
 2. Track the highest score and the corresponding student's name.
 3. If multiple students have the same highest score, return the name of the first student with that score.
+
+E.g., highest_score([("Alice", 85), ("Bob", 92), ("Carol", 78)]) will return "Bob"
+      highest_score([("Tom", 90), ("Amy", 95), ("Sam", 88)]) will return "Amy"
+      highest_score([("David", 75)]) will return "David"
 """
 
 def highest_score(students):
@@ -211,9 +210,7 @@ def highest_score(students):
     pass
 
 
-assert highest_score([("Alice", 85), ("Bob", 92), ("Carol", 78)]) == "Bob"
-assert highest_score([("Tom", 90), ("Amy", 95), ("Sam", 88)]) == "Amy"
-assert highest_score([("David", 75)]) == "David"
+# Write your unit tests below
 
 
 
