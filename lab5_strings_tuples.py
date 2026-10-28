@@ -281,6 +281,15 @@ def parse_log_line(line):
 # and store each tuple item in a list.
 # Hint: log_string.split('\n') will return a list of lines.
 
+log_string = """
+2024-03-05 14:32:15 [ERROR] database.py Connection timeout after 30s
+2024-03-05 14:32:18 [WARNING] api.py Slow query detected (2.3s)
+2024-03-05 14:32:22 [INFO] server.py Server started on port 8000
+2024-03-05 14:32:45 [ERROR] database.py Connection lost to primary
+2024-03-05 14:33:02 [WARNING] cache.py Redis connection unstable
+2024-03-05 14:33:15 [ERROR] api.py Request handler crashed
+2024-03-05 14:33:22 [INFO] database.py Attempting reconnect
+"""
 
 
 
