@@ -48,6 +48,7 @@ def reverse_str(s):
 Exercise 2
 
 Complete the function below to count how many vowels ('a', 'e', 'i', 'o', 'u') in a string.
+Note that uppercase vowels are also considered vowels.
 
 For example, 
 count_vowels("Apple") should return 2, since 'A' and 'e' are vowels.
