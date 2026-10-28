@@ -215,28 +215,33 @@ def highest_score(students):
 
 
 
+
+
+
+
 """Log Parsing Exercise (Optional Challenge)
 
 You are given a log string containing application logs 
 in a standardized format. Each log entry contains 
 a timestamp, severity level, module name, and message.
-Your task is to implement two functions to parse and filter
-these logs.
+Your task is to parse and analyze these logs.
 
-Log format - Each log line follows this pattern:
+As in log_string below, the log format - each log line follows this pattern:
 YYYY-MM-DD HH:MM:SS [LEVEL] module.py Message
+"""
 
-Sample log data:
-log_string = "
-2024-03-05 14:32:15 [ERROR] database.py Connection timeout after 30s
+
+log_string = """2024-03-05 14:32:15 [ERROR] database.py Connection timeout after 30s
 2024-03-05 14:32:18 [WARNING] api.py Slow query detected (2.3s)
 2024-03-05 14:32:22 [INFO] server.py Server started on port 8000
 2024-03-05 14:32:45 [ERROR] database.py Connection lost to primary
 2024-03-05 14:33:02 [WARNING] cache.py Redis connection unstable
 2024-03-05 14:33:15 [ERROR] api.py Request handler crashed
 2024-03-05 14:33:22 [INFO] database.py Attempting reconnect
-"
+"""
 
+
+"""
 Implement a function parse_log_line(line) to parse a single log line into its components.
 
 Your function returns:
@@ -261,9 +266,9 @@ Hints:
 # Returns 'I like you'
 
 3. str.join()
-list = ['Hello, ', 'world!']
+list = ['Hello,', 'world!']
 ' '.join(list)
-# Returns 'Hello,  world!'
+# Returns 'Hello, world!'
 """
 
 def parse_log_line(line):
@@ -271,28 +276,33 @@ def parse_log_line(line):
 
 
 
-
-# Your unit tests
-
+# Write your unit tests below
 
 
 
-# Use your parse_log_line() to parse all the lines in the sample data log_string,
-# and store each tuple item in a list.
-# Hint: log_string.split('\n') will return a list of lines.
 
-log_string = """
-2024-03-05 14:32:15 [ERROR] database.py Connection timeout after 30s
-2024-03-05 14:32:18 [WARNING] api.py Slow query detected (2.3s)
-2024-03-05 14:32:22 [INFO] server.py Server started on port 8000
-2024-03-05 14:32:45 [ERROR] database.py Connection lost to primary
-2024-03-05 14:33:02 [WARNING] cache.py Redis connection unstable
-2024-03-05 14:33:15 [ERROR] api.py Request handler crashed
-2024-03-05 14:33:22 [INFO] database.py Attempting reconnect
-"""
+
+
+"""Now use your parse_log_line() to parse all the lines in the sample data log_string,
+and store each tuple item in a list.
+Hint: log_string.splitlines() will return a list of lines with a skip for empty lines."""
+
+
+
+
+
+
+
+
+"""Now you can use what you've learnt about accumulator algorithm to do more data analyzing. 
+For example, to count how many ERROR logs there."""
+
+
+
 
 
 
 """
 Remember to complete the lab quiz on e-learn. That's all for this lab!
 """
+
