@@ -123,14 +123,14 @@ Exercise 4
 
 Similar as exercise 3, write a function called students_id_occurences() 
 that takes a list of student ids as its parameter, 
-and returns the occurences of each different student 
+and returns the occurrences of each different student 
 who uses the shuttle service in the form of dictionary data type.
 
 E.g.,
-students_id_occurences(['002', '003', '001', '004', '012']) 
+students_id_occurrences(['002', '003', '001', '004', '012']) 
 returns {'002': 1, '003': 1, '001': 1, '004': 1, '012': 1}}
 
-students_id_occurences(['002', '003', '001', '012', '003', '001']) 
+students_id_occurrences(['002', '003', '001', '012', '003', '001']) 
 returns {'002': 1, '003': 2, '001': 2, '012': 1}
 
 Hint: To initialize an empty dict: id_dict = {}
