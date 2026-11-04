@@ -146,7 +146,7 @@ def students_id_occurrences(ids):
 
 
 
-"""
+r"""
 Exercise 5
 
 Complete the following function to count 
@@ -190,7 +190,7 @@ where each repository includes information such as id, name, stars, and more.
 
 import requests
 
-url = "https://api.github.com/search/repositories?q=language:python+sort:stars+stars:>300000"
+url = "https://api.github.com/search/repositories?q=language:python+sort:stars+stars:>350000"
 # You can copy and paste the url into your browser to view the data.
 
 headers = {"Accept": "application/vnd.github.v3+json"}
@@ -203,7 +203,7 @@ response_dict = response.json() # Convert the response object to a dictionary
 
 
 """
-Task: Write a function called id_name_repo_starred_300k(response_dict) that
+Task: Write a function called id_name_repo_starred_350k(response_dict) that
 takes response_dict as its parameter, 
 traverses the list stored under the "items" key,
 returns a dictionary containing all repository id → name pairs.
@@ -212,10 +212,10 @@ Ensure that your function passes the unit test provided below.
 """
 
 # Save the repositories' id: name as a pair in a dict, and print them out.
-def id_name_repo_starred_300k(response_dict):
+def id_name_repo_starred_350k(response_dict):
     pass
 
-# assert id_name_repo_starred_300k(response_dict) == {
+# assert id_name_repo_starred_350k(response_dict) == {
 #     13491895: 'free-programming-books',
 #     54346799: 'public-apis',
 #     83222441: 'system-design-primer'
