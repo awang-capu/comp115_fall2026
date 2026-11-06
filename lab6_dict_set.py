@@ -1,5 +1,5 @@
 """
-Lab 8 - Set and Dict 
+Lab 6 - Set and Dict 
 (5 exercises in total)
 
 Objective:
