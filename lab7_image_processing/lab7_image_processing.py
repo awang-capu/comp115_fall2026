@@ -158,10 +158,10 @@ def blue_washed_image():
 
 #blue_washed_image()
 
-# Please open the rick_changing.gif file on the left, which was created
-# by the following 4 lines of code. How do you like it?
+# Uncomment and run the following 4 lines of code. What do you get?
+
 # img1 = Image.open("rick_and_morty.png")
-# img2 = Image.open("rick_blue_washed.png")
+# img2 = Image.open("img2_rick_blue_washed.png")
 # frames = [img1, img2]  # Save into a GIF file that loops forever
 # frames[0].save('rick_changing.gif', format='GIF', append_images=frames[1:], save_all=True, duration=100, loop=0)
 
