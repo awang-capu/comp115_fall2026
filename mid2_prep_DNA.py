@@ -331,11 +331,3 @@ def visualize(dna, color):
 #     visualize(DNA['Rhesus'], 'blue')
 #     visualize(DNA['Chimpanzee'], 'pink')
 #     drawing_screen.mainloop() # Wait for the user to close the drawing screen
-
-# if __name__ == "__main__":
-#     drawing_screen = turtle.Screen()
-#     visualize(DNA['Human'], 'red')
-#     visualize(DNA['Rat'], 'green')
-#     visualize(DNA['Rhesus'], 'blue')
-#     visualize(DNA['Chimpanzee'], 'pink')
-#     drawing_screen.mainloop() # Wait for the user to close the drawing screen
